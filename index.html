@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doğum Günü</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="start-screen">
+    <h2>Doğum Tarihini Gir</h2>
+    <input type="text" id="dob" placeholder="gg/aa/yyyy" maxlength="10">
+    <button onclick="checkDOB()">Giriş</button>
+  </div>
+
+  <div id="photo-screen" class="content-wrapper">
+    <img id="photo" class="photo-slide" src="" alt="">
+  </div>
+
+  <div id="final-photo-screen" class="content-wrapper">
+    <h2>Pıtırcığın da seni unutmadı,<br>Doğum günün kutlu olsun annem 💕</h2>
+    <img class="photo-slide" src="images/photo_pitiricik.jpg" alt="Final Photo">
+  </div>
+
+  <div id="letter-screen" class="content-wrapper night-theme">
+    <canvas id="stars"></canvas>
+    <div id="letter-container">
+      <div id="letter">💌 Mektup</div>
+      <button id="open-letter-btn" onclick="openLetter()">Mektubu Aç</button>
+      <div id="letter-content">
+        <p>Birlikte bir sene daha. Kırgınlıklarımız, kızgınlıklarımız oldu bazen üstesinden geldik bazen gelemedik. Ama her şeye rağmen seni sevmekten hiç vazgeçmedim. Yeni yaşında daha güzel bir sene geçiririz umarım. Doğum günün kutlu olsun.</p>
+      </div>
+    </div>
+  </div>
+
+  <audio id="bgm" src="./music/bgm.mp3" autoplay loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
